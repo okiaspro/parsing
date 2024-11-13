@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #00FFDD;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+.dashboard-header .author {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #FFDD00;
+    text-align: center; /* Bisa diubah ke `right` jika ingin ke kanan */
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.data-card, .chart-card {
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.chart-container {
+    background-color: #2A2A2A;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Tabel dengan latar belakang abu-abu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #00FFDD;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+th {
+    background-color: #444;
+    color: #FFDD00;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #555;
+}
+
+tr:hover {
+    background-color: #666;
+    cursor: pointer;
+}

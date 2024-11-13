@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-header">
+        <h1>Sensor Data Dashboard</h1>
+        <p class="date">Last updated: <span id="updateDate">-</span></p>
+        <p class="author">Oki Ariansyah Corleone 152022184</p>
+    </div>
+
+    <div class="dashboard-content">
+        <div class="data-card">
+            <h3>Temperature Max</h3>
+            <p id="suhumax"></p>
+            <div class="chart-container">
+                <canvas id="temperatureMaxChart"></canvas>
+            </div>
+        </div>
+
+        <div class="data-card">
+            <h3>Temperature Min</h3>
+            <p id="suhumin"></p>
+            <div class="chart-container">
+                <canvas id="temperatureMinChart"></canvas>
+            </div>
+        </div>
+
+        <div class="data-card">
+            <h3>Average Temperature</h3>
+            <p id="suhurata2"></p>
+            <div class="chart-container">
+                <canvas id="averageTemperatureChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>Temperature and Humidity Over Time</h3>
+            <canvas id="temperatureHumidityChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Include JavaScript File -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
